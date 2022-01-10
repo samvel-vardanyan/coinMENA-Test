@@ -1,0 +1,17 @@
+body {
+  background-color: #22272e;
+}
+
+.container {
+  border: 1px solid #444c56;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin: 0 40px 20px;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1012px;
+    margin: 0 auto 20px;
+  }
+}

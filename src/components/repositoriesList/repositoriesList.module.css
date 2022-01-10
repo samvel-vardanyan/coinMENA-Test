@@ -1,0 +1,139 @@
+.container {
+    width: 980px;
+    margin: auto;
+    border: 1px solid #444c56;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 16px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.repositoryContainer {
+    box-sizing: border-box;
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    min-height: 97px;
+    border-bottom: 1px solid #444c56;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.repoInfo {
+    font-size: 20px;
+    line-height: 25px;
+    color: #539bf5;
+}
+
+.icon {
+    margin-right: 4px;
+    fill: #768390;
+    position: relative;
+    bottom: -6px;
+}
+
+.repoName {
+    margin-left: 6px;
+}
+
+.repoName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.descriptionRow {
+    margin: 4px 0;
+    color: #768390;
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 500px;
+}
+
+.starBtn {
+    padding: 3px 12px;
+    box-sizing: border-box;
+    line-height: 20px;
+    font-size: 12px;
+    color: #adbac7;
+    background-color: #373e47;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.starBtn:hover {
+    cursor: pointer;
+}
+
+.starIcon {
+    fill: currentColor;
+    margin-right: 8px;
+}
+
+.isStarActive path {
+    fill: #daaa3f;
+}
+
+.plrow {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+img.author {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+
+.pLanguage, .starsCount, .forks, .builtBy {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    color: #768390;
+    font-size: 12px;
+}
+
+.forksIcon, .starIconSmall {
+    fill: currentColor;
+    height: 16px;
+    width: 16px;
+    margin-right: 3px;
+}
+
+.starsCount:hover, .forks:hover {
+    cursor: pointer;
+    color: #539bf5;
+}
+
+.author {
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.starsSince {
+    font-size: 12px;
+    color: #768390;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .plrow {
+        flex-direction: column;
+    }
+    .infoRow {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .builtBy {
+        margin-left: -25px;
+    }
+}
+
+

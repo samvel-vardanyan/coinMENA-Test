@@ -1,0 +1,8 @@
+.noDataContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    color: #adbac7;
+}

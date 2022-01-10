@@ -1,0 +1,206 @@
+.container {
+    width: 980px;
+    margin: auto;
+    border: 1px solid #444c56;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.image {
+    width: 48px;
+    height: 48px;
+    margin: 0 16px;
+}
+
+.circleImg {
+    border-radius: 50%;
+}
+.developerContainer {
+    box-sizing: border-box;
+    display: flex;
+    padding: 16px;
+    width: 100%;
+    min-height: 97px;
+    border-bottom: 1px solid #444c56;
+    justify-content: space-between;
+}
+
+.developerRepoInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 278px;
+}
+
+.fireIcon {
+    fill: #cc6b2c;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.developerInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 278px;
+}
+
+.developerNameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.developerName {
+    color: #539bf5;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    max-width: 180px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.developerName:hover, .developerUserName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #539bf5;
+}
+
+.developerUserName {
+    color: #768390;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.developerRank {
+    color: #768390;
+}
+
+.developerRank:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.popularRepo {
+    display: flex;
+    margin-bottom: 4px;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #768390;
+}
+
+.repoName {
+    display: flex;
+    align-items: center;
+    color: #539bf5;
+    font-size: 16px;
+}
+
+.actionRepoIcon {
+    fill: #768390;
+    margin-right: 4px;
+}
+.repositoryName {
+    max-width: 175px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.repositoryName:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.repoDescription {
+    color: #768390;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.developerMediaInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 200px;
+}
+
+.btn {
+    box-sizing: border-box;
+    border: 1px solid #636e7b;
+    height: 30px;
+    display: flex;
+    padding: 3px 12px;
+    border-radius: 6px;
+    align-items: center;
+    color: #adbac7;
+    background-color: #373e47;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.sponsorBtn {
+    margin-right: 8px;
+}
+
+.sponsorBtn:hover, .followBtn:hover {
+    background-color: #444c56;
+    border-color: #768390;
+    transition-duration: .1s;
+}
+
+.sponsorBtn:hover .heartIcon {
+    transform: scale(1.1);
+}
+
+.heartIcon {
+    margin-right: 4px;
+}
+
+.mainRow {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 650px) {
+    .developerContainer {
+        flex-wrap:wrap;
+    }
+    .developerRepoInfo {
+        order: 3;
+        margin-left: 85px;
+        margin-top: 5px;
+    }
+
+    .developerInfo{
+        width: 50%;
+    }
+    .developerMediaInfo{
+        width:50%;
+        order:2;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 509px) {
+    .developerContainer {
+        flex-direction: column;
+    }
+    .developerRepoInfo {
+        order: 2;
+        margin-left: 85px;
+    }
+
+    .developerMediaInfo{
+        order:3;
+        margin-top: 20px;
+        margin-left: 85px;
+        justify-content: flex-start;
+    }
+}
